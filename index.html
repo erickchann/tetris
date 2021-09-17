@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris - Test 2</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(5, 5, 17);
+            font-family: 'Electrolize', sans-serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .right-panel {
+            margin-left: 1rem;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid cyan;
+            color: cyan;
+            text-align: center;
+        }
+
+        canvas {
+            background-color: black;
+            border: 2px solid cyan;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <canvas width="300" height="600"></canvas>
+
+        <div class="right-panel">
+            <h1 class="title">Score</h1>
+            <h2 class="score">0</h2>
+        </div>
+    </div>
+
+    <script src="src/Piece.js"></script>
+    <script src="src/Game.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
